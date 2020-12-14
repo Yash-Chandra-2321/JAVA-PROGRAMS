@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+import java.util.Scanner;
+
+class first
+{
+    public static void main (String[] args) {
+        int a=0;
+        int b=1;
+        int c;
+        int n;
+        Scanner s1= new Scanner(System.in);
+        System.out.println("Enter the number till where you want run the series");
+        n=s1.nextInt();
+        System.out.println(a);
+        System.out.println(b);
+        
+        for(int i=2;i<n;++i)
+        {
+            c=a+b;
+            System.out.println(c);
+            a=b;
+            b=c;
+            
+        }
+        
+    }
+}
